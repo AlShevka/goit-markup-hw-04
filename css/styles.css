@@ -9,6 +9,8 @@
 --accent-color-ocean: #404bbf;
 --primaru-btn-color-iis: #4d5ae5;
 --border-line-color: #e7e9fc;
+--subtl-color-light-slate: #8E8F99;
+--success-color-green: #31D0AA;
 }
 
 /* Скидання маркерів і підкреслення/ Reset start */
@@ -206,6 +208,8 @@ body{
 
 /* Section */
 
+  /* Section 1 */
+
 .about-section {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -219,6 +223,16 @@ body{
 
 .about-item {
 	width: calc((100% - 72px) / 4);
+}
+
+.about-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 264px;
+	height: 112px;
+	background: var(--light-color-cloud);
+	border-radius: 4px;
 }
 
 .title {
@@ -246,6 +260,7 @@ body{
 	color:var(--first-color-slate)
 }
 
+/* Section 2 */
 .works-section {
 	padding-bottom: 120px;
 }
@@ -259,6 +274,7 @@ body{
 	width: calc((100% - 48px) / 3);
 }
 
+/* Section 3 */
 .team-section {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -277,9 +293,72 @@ body{
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.team-text {
+	margin-bottom: 8px;
+}
+
 .name-team-container {
 	padding: 32px 16px;
 	text-align: center;
+}
+
+.social-team {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.social-team-item {
+	list-style: none;
+}
+
+.social-team-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: var(--primaru-btn-color-iis);
+	border-radius: 50%;
+}
+
+.social-team-link:hover,
+.social-team-link:focus {
+	background-color: var(--accent-color-ocean);
+}
+
+/* Section 4 */
+.customers-section {
+	padding-top: 120px;
+	padding-bottom: 72px;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.customers-item {
+	border: 1px solid var(--subtl-color-light-slate);
+	border-radius: 4px;
+	list-style: none;
+}
+
+.customers-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 168px;
+	height: 88px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+	color: var(--accent-color-ocean);
+}
+
+.customers-icon {
+ fill: currentColor;
 }
 
 /* Portfolio */
@@ -363,6 +442,10 @@ body{
 	background-color: var(--dark-color-navy-blue);
 }
 
+.footer-container {
+	display: flex;
+	gap: 120px;
+}
 
 .footer-text {
 	width: 264px;
@@ -386,3 +469,33 @@ body{
 	color: var(--light-color-cloud);
 }
 
+.footer-subtitle {
+margin-bottom: 16px;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--secondary-color-white);
+}
+
+.social-footer {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+
+.social-footer-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--primaru-btn-color-iis);
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+	background-color: var(--success-color-green);
+}
+
+
+.social-footer-icon {}
